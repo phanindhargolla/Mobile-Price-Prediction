@@ -86,4 +86,3 @@ numpy
 pandas
 seaborn
 matplotlib
-keras
