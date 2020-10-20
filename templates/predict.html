@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+    img {
+        width: 500;
+        height: 500;
+    }
+
+    </style>
+    <title>Prediction</title>
+  </head>
+  <body>
+    <div class="card">
+    <div class="card-heading">
+        <h1 class="text-center text-primary">Prediction of Mobile Price</h1>
+        <hr/>
+    </div>
+    <div class="card-body">
+        {% if prediction == 0 %}
+        <p class="text-center text-primary">Low</p>
+        {% elif prediction == 1 %}
+        <p class="text-center text-primary">Medium</p>
+        {% elif prediction == 1 %}
+        <p class="text-center text-primary">High</p>
+        {% else %}
+        <p class="text-center text-primary">Extremely High</p>
+        {% endif %}
+    </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        if {% if prediction == 0 %}
+        <div class="row">
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQzPHm8ODAXUZ3R0iMZ25avcMfmb3pw2l-PoUMPYH96Vxd_8z4RObYS4YG9aiml&usqp=CAc" class="img-responsive img-thumbnail" alt=""/>
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRjah5Ed6jMXM8fTDVLL84ZQ0-2xRIkQjl9lrlZgK-MGPzMI7fAdblV-pGLBjUMRUeINZCYFM3C_ZT_bCHQfqnHW3nlM_WiNADzoJsFkEk&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTbGW4kThTNH-bb9CeHF5IJxIm1Ks_AGiOaaCu8tA1UHSJR_A8crNYthGcb7Yu-&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        </div>
+        {% elif prediction == 1 %}
+        <div class="row">
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRHesa6pDsTVL-bPnSF5OHzJ59E76e1LaM6099Ha0Qbv-EjTmIoHUxO1GdtMfKJ10Je0FVOO4HmDQ&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRJgHD_DtKc_Qzslrpi9kxJymrT55XNNHNNFQisqDheHIbKuxGHJ-xjpWUV02vgo5F_rOh7iV_QRqNoh2vKIEpyruZMRb_1PWp0wjHJrA&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSSwVQhN4ze_WEhECiG33eSFQYiZ754AamVrtQV4MvKdnPQ1XkevBygpZvfUMimM3lNQwrtYHojNA&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        </div>
+        {% elif prediction == 2 %}
+        <div class="row">
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSYkaWSktShgwcpArOJsAngB7SWWywANHvoVB_3cLXQ-lSdwBAR39wXYOxxJ6H9ruPtC8_Z5kBrLw&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSwlCheopCIn88ZQDtKs3D_314eg9t9o1oBbOjFUeAmw275XiVd8-_hDeHcIuNm3gJ4lp7Ro1nlXQ&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ61Iy797dF5hxX2ZfsOy6Z6eU_fHgYgKjyiZQJfiDLfnia4G7QHQzCOfr93wkK4ulRjCetnI1c8w0&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        </div>
+        {% else %}
+        <div class="row">
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQCMiMRD2GFmJE5Rmw3hq5SbMzogC37Xdk8ETLh3JFPg1D_rrSFv2LN-YYWWrH2xzyFBeVEQ53W_g&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRwaEQfjs37_IL9gr5cmkWWIB30QaZXgNlgPjfNBGLpBNS90Q87x05JrAQY3QiXL7Z72mDm9L8sfMU&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        <div class="col-md-4">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTBv6hWiozKTJM_Eb6uOy6dYcSnLpRVnCklbFDuHFe-N2PPUtRBGA6WvAdxvspH3zbWIhraqAf2ig&usqp=CAc" class="img-responsive img-thumbnail" alt="">
+        </div>
+        </div>
+        {% endif %}
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
